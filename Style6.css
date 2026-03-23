@@ -1,0 +1,210 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navigation */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    color: #ff9800;
+}
+
+
+/* --- Shopping Cart UI --- */
+
+.cart-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.cart-container h1 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Individual Item Row */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-of-type {
+    border-bottom: 2px solid #333;
+}
+
+.cart-item-info {
+    flex: 2;
+}
+
+.cart-item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+}
+
+/* Counter Controls */
+.qty-controls {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.qty-btn {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.qty-btn:hover {
+    background: #e0e0e0;
+}
+
+.qty-number {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Price Display */
+.cart-item-price {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Summary and Calculator Area */
+.cart-summary {
+    margin-top: 30px;
+    text-align: right;
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 5px;
+}
+
+.total-label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.total-amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #28a745; /* Matches the green "Purchase" color from Stock page */
+}
+
+/* Checkout Button */
+.checkout-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #555;
+}
+
+/* Empty Cart State */
+.empty-cart-msg {
+    padding: 50px;
+    color: #888;
+    font-style: italic;
+}
+
+
+/* Cart Image Styling */
+.cart-product-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 2; /* Keeps the name and image section wider */
+}
+
+.cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* Ensures the sneaker isn't stretched */
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.cart-item-name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 500px) {
+    .cart-product-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .cart-item-img {
+        width: 50px;
+        height: 50px;
+    }
+}

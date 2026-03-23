@@ -1,0 +1,144 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+/* Contact Page Specific Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    color: #ff9800;
+}
+
+
+.contact-container {
+    text-align: center;
+    padding: 50px 10% 100px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    flex: 1;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1a237e; /* Navy blue like your drawing */
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fdfde0; /* Light yellowish tint from drawing */
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px #000;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.info-item i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.brand-logo {
+    width: 160px;                    /* Adjust this to make it smaller/larger */
+    height: auto;
+    max-width: none !important;     /* Overrides previous constraints */
+    margin: 0;
+}
+
+
+
+
+/* Matching the icon colors from your sketch */
+.fa-whatsapp { color: #25D366; }
+.fa-map-marker-alt { color: #ff5252; }
+.fa-instagram { color: #e1306c; }
+.fa-facebook { color: #1877f2; }

@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navigation */
+/* Navigation */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    color: #ff9800;
+}
+
+
+/* --- About Us Page Specific Styles --- */
+
+.about-page {
+    padding: 40px 10%;
+    text-align: center;
+    color: #333;
+}
+
+.about-title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Helps on smaller screens */
+}
+
+.dashed-box {
+    flex: 1;
+    min-width: 300px;
+    border: 3px dashed #333;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #fff;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.bio-section p {
+    font-size: 1.1rem;
+}
+
+.policies-section h2 {
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.policies-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.policies-section li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.about-footer-text {
+    margin-top: 50px;
+}
+
+.about-footer-text p {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
+
+

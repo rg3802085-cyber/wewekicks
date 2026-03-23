@@ -1,0 +1,177 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navigation */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: white;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.top-nav a:hover {
+    color: #ff9800;
+}
+
+
+/* --- Meet Us / Staff Page Styles --- */
+
+.staff-page {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.meet-title {
+    font-size: 3rem;
+    color: #1a237e; /* Dark blue like the drawing */
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns as per drawing */
+    gap: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.staff-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.staff-info-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.staff-name {
+    color: #1a237e;
+}
+
+/* Specific Role Colors from the drawing */
+.staff-role.owner { color: #333; }
+.staff-role.assistant { color: #fbc02d; } /* Yellow/Gold */
+.staff-role.commerce { color: #333; }
+.staff-role.inventory { color: #fbc02d; }
+
+.staff-body {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.avatar-circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #ddd;
+    flex-shrink: 0;
+}
+
+.bio-box {
+    border: 3px solid #1a237e; /* Purple/Blue border from drawing */
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 100px;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 850px) {
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .staff-body {
+        flex-direction: column;
+    }
+    
+    .avatar-circle {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+.Jair {
+   width: 160px;
+    height: 160px; /* Must match width for a perfect circle */
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover; /* Keeps the aspect ratio from stretching */
+    margin: 0;
+    border: 1px solid #ccc; /* Optional: matches the subtle outline of the others */
+}
+
+.Ivin {
+   width: 150px;
+    height: 150px; /* Must match width for a perfect circle */
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover; /* Keeps the aspect ratio from stretching */
+    margin: 0;
+    border: 1px solid #ccc; /* Optional: matches the subtle outline of the others */
+}
+
+.Zidane {
+   width: 150px;
+    height: 150px; /* Must match width for a perfect circle */
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover; /* Keeps the aspect ratio from stretching */
+    margin: 0;
+    border: 1px solid #ccc; /* Optional: matches the subtle outline of the others */
+}
+
+.Ryan {
+   width: 150px;
+    height: 150px; /* Must match width for a perfect circle */
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover; /* Keeps the aspect ratio from stretching */
+    margin: 0;
+    border: 1px solid #ccc; /* Optional: matches the subtle outline of the others */
+}
